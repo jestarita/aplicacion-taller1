@@ -1,54 +1,33 @@
-import React, { useState, useEffect  } from 'react';
-//import MoviesService from '../../services/movies/Movies';
+
+import React, {useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseurl = 'https://api-movies-free.herokuapp.com/api';
-async function getMovies(){
-    try{
-        const response = await axios({
-            url: `${baseurl}/movies`,
-            method: `GET`
-        })
-        return response;
-    }catch(e)
-    {
-        console.log(e);
-    }
-}
-
 const Documentos = () =>{
-   
-    const [isLoading, SetisLoading] = useState(true); 
-    const [Items, setItems] = useState([])
+  const [data, setData] = useState({ results: [] as any });
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'https://api-movies-free.herokuapp.com/api/movies',
+      );
+      setData(result.data);
 
-    
-    useEffect( ()=>{
-     
-
-       async function loadMovies (){
-        const respuesta = await getMovies()
-        SetisLoading(true);
-        console.log(respuesta?.data.results);
-        setItems(respuesta?.data.results);
-        
-       }
-       loadMovies();
-    }, []);
-
+    };
  
-  return(
-      <div>
-          
-          {/* <ul>
-        {Items.map((Item, index) => (
-          <li key={index}>
-            {Item.nombre} {Item.descripcion}
-          </li>
-        ))}
-      </ul> */}
-         
-      </div>
-  )
+    fetchData();
+  }, []); 
+    return(
+    <div>
+        <ul>
+      {data.results.map((item:any) => (
+        <li key={item.nombre}>
+          {item.nombre}
+        </li>
+      ))} 
+    </ul>
+    </div>
+    )
+      
+    
 }
 
 export default Documentos;
