@@ -1,40 +1,23 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './Home.scss';
-
-const Info1 = () =>{
-    return (
-        <div className="jumbotron mt-3 sm-4"> 
-            <h2 className="display-4">Hola gente bienvenidos a mi aplicacion react</h2>
-            <p className="lead">This is a simple hero unit, a simple jumbotron-style component 
-            for calling extra attention to featured content or information.</p>
-        </div>
-    )
-}
-
-const Info2 = () =>{
-    return (
-        <div className="jumbotron mt-3 sm-4"> 
-        <h2 className="display-4">Aprende mas acerca de react</h2>
-        <p className="lead">This is a simple hero unit, a simple jumbotron-style component 
-        for calling extra attention to featured content or information.</p>
-    </div>
-    )
-}
-
+import Nota1 from './components/nota1/Nota1';
+import Nota2 from './components/nota2/Nota2';
 
 const Home = () =>{
     return(
-        <div>
+       <Fragment>
         <h1 className="text-center mt-2">Bienvenido al aplicativo de react</h1>
         <div className="row">
             <div className="col-sm-12 col-xl-6 col-md-6">
-                <Info1 />
+                <Nota2 />
             </div>
             <div className="col-sm-12 col-xl-6 col-md-6">
-                <Info2 />
+                <Nota1 />
             </div>
         </div>
-        </div>
+        
+        <br /><br />
+        </Fragment>
     )
 }
 

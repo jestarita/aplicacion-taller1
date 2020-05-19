@@ -1,38 +1,44 @@
 $color_sombra: gray;
-.card{
+$color_titulo: darkslategray;
+$color_letra: black;
+.tarjeta{
     width: 95.5%;
     box-shadow: 0px 0px 1px $color_sombra;
     margin-left: 20px;
     margin-right: 10px;
     float: left;
+    height: 95%;
 }
-.card:hover{
+.tarjeta:hover{
     box-shadow: 0px 1px 4px $color_sombra;
 }
-.card img{
+.tarjeta img{
     display: block;
-    width: 100%;
-    height: 240px;
+    width: 81%;
+    height: 190px;
     transition: transform .2s;
+    margin-left: 10%;
+    margin-top: 12px;
 }
 
-.card img:hover{
+.tarjeta img:hover{
   transform: scale(1.025);
 }
 
-.card .card-body .titulo-tarjeta{
-    text-shadow: 0px 1px 3px gray;
-    color: darkslategray;
+.tarjeta .cuerpo .titulo-tarjeta{
+    text-shadow: 0px 1px 3px $color_sombra;
+    color: $color_titulo;
     font-size: 15px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card .card-body .descripcion{
-    color: black;
-    font-size: 12px;
+.tarjeta .cuerpo .descripcion{
+    color: $color_letra;
+    font-size: 13px;
     font-family: Arial ;
     font-weight: normal;
     letter-spacing: 1px;
     text-align: justify;
 }
+

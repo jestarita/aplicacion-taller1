@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import './App.css';
 
-/* COmponentes */
+/* Componentes */
 import Footer from './components/footer/Footer';
 import Navegacion from './components/Navegacion/Navegacion';
 import Documentos from './components/documentos/Documentos';
-import Articulos from './components/articulos/articulos';
+import Articulos from './components/Articulos/Articulos';
 import Home from './components/home/Home';
+
 function App() {
   return (
    
@@ -15,12 +16,11 @@ function App() {
           <header>
             <div className="w-100">
             <Navegacion />
-            </div>
-        
+            </div>        
         </header>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-12"> 
+          <div className="col-sm-12 col-md-12 col-xl-12"> 
           <Switch>
           <Route path="/documentos">
             <Documentos />
@@ -36,17 +36,8 @@ function App() {
         </div>
         </div>
     </div>
-
-    <footer>
-      <div className="container-fluid">
-      <div className="row">
-        <div className="col-sm-12 text-center">
-            <Footer />
-        </div>
-      </div>
-      </div>
-     
-    </footer>
+    <Footer />
+  
  </Router>
 
   );
