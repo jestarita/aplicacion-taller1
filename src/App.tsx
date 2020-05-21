@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import './App.css';
-
 /* Componentes */
 import Footer from './components/footer/Footer';
 import Navegacion from './components/Navegacion/Navegacion';
@@ -11,16 +10,14 @@ import Home from './components/home/Home';
 
 function App() {
   return (
-   
-          <Router>
-          <header>
-            <div className="w-100">
+          <Router>            
+          <header>          
             <Navegacion />
-            </div>        
-        </header>
+          </header>
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-xl-12"> 
+          <React.StrictMode>
           <Switch>
           <Route path="/documentos">
             <Documentos />
@@ -33,6 +30,7 @@ function App() {
           </Route>
          
         </Switch>
+        </React.StrictMode>
         </div>
         </div>
     </div>

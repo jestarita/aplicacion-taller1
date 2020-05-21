@@ -3,14 +3,14 @@ $color_hover: #4CBE8C;
 $color_letras: #ccc;
 
 
-.nav-link:hover{
+.navbar-right .nav-link:hover{
 background: $color_hover;
 color:$color_letras;
 box-shadow: 0px 0px 1px lightblue;
 transition: all 300ms;
 }
 
-.active{
+.navbar-right .active{
 background: $color_hover;
-color:$color_letras;
+color: white;
 }
