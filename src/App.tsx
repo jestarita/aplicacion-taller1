@@ -4,7 +4,7 @@ import './App.css';
 /* Componentes */
 import Footer from './components/footer/Footer';
 import Navegacion from './components/Navegacion/Navegacion';
-import Articulos from './components/articulos/Articulos';
+import Articulos  from './components/articulos/Articulos';
 import Documentos from './components/documentos/Documentos';
 import Home from './components/home/Home';
 

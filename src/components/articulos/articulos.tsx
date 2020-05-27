@@ -3,7 +3,7 @@ import './Articulos.scss';
 
 const Articulo = (props:any) =>{
     return(
-        <Fragment>
+     
         <div className="col-sm-4 col-md-6 col-xl-4">
         <div className="card mt-3 mx-2 tarjeta" key={props.id}>
                 <img src={props.imagen} className="card-img-top" alt="play-4"/>
@@ -12,9 +12,8 @@ const Articulo = (props:any) =>{
                 <p className="card-text descripcion">{props.descripcion}</p>
             </div>
         </div>
-    </div>
+    </div>    
     
-    </Fragment>
     )
 }
 
