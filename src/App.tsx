@@ -5,7 +5,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Navegacion from './components/Navegacion/Navegacion';
 import Articulos  from './components/articulos/Articulos';
-//import Documentos from './components/documentos/Documentos';
+import Documentos from './components/documentos/Documentos';
 import Home from './components/home/Home';
 
 function App() {
@@ -19,12 +19,12 @@ function App() {
           <div className="col-sm-12 col-md-12 col-xl-12"> 
           <React.StrictMode>
           <Switch>
-          <Route path="/documentos">
+          <Route path="/articulos">
             <Articulos />
           </Route>
-          {/* <Route path="/documentos">
+          <Route path="/documentos">
             <Documentos />
-          </Route> */}
+          </Route>
           <Route path="/">
              <Home />
           </Route>
