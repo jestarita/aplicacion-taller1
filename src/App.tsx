@@ -7,7 +7,7 @@ import Navegacion from './components/Navegacion/Navegacion';
 
 import Documentos from './components/documentos/Documentos';
 import Home from './components/home/Home';
-import Hola from './components/hola';
+import Articles from './components/Articles/articles';
 function App() {
   return (
           <Router>            
@@ -20,7 +20,7 @@ function App() {
           <React.StrictMode>
           <Switch>
           <Route path="/articulos">
-          <Hola />
+          <Articles />
           </Route>
           <Route path="/documentos">
             <Documentos />

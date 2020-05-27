@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import './hola.scss';
+import './articles.scss';
 const Articulo = (props:any) =>{
     return(
      
@@ -15,7 +15,7 @@ const Articulo = (props:any) =>{
     
     )
 }
-const Hola  = () =>{
+const Articles  = () =>{
  const products = [
         {id: 1, imagen:'./Productos/portatil.jpg', titulo: 'Laptop asus 2020', 
         descripcion: 'Disponible en vibrantes combinaciones de colores que desbordan personalidad, el ASUS VivoBook S15 representa un enfoque poco convencional de la vida digital cotidiana. El innovador ASUS ScreenPad™ 2.0 ofrece nuevas formas de trabajar con tu portátil que optimizan tu entorno multitarea'},
@@ -47,4 +47,4 @@ const Hola  = () =>{
     )
 }
 
-export default Hola;
+export default Articles;
