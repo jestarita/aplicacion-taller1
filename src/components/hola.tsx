@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-
+import './hola.scss';
 const Articulo = (props:any) =>{
     return(
      
