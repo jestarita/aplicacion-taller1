@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom";
-import './App.css';
+
 /* Componentes */
 import Footer from './components/footer/Footer';
 import Navegacion from './components/Navegacion/Navegacion';
-//import Articulos  from './components/articulos/Articulos';
+
 import Documentos from './components/documentos/Documentos';
 import Home from './components/home/Home';
-import Hola from './components/hola/hola';
+import Articles from './components/articles/Articles';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <React.StrictMode>
           <Switch>
           <Route path="/articulos">
-            <Hola />
+          <Articles />
           </Route>
           <Route path="/documentos">
             <Documentos />
