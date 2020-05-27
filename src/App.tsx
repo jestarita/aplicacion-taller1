@@ -7,7 +7,6 @@ import Navegacion from './components/Navegacion/Navegacion';
 
 import Documentos from './components/documentos/Documentos';
 import Home from './components/home/Home';
-//import Articles from './components/articles/Articles';
 import Hola from './components/hola';
 function App() {
   return (
