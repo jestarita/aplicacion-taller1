@@ -1,6 +1,6 @@
 
 import React, {useState, useEffect, Fragment } from 'react';
-import MoviesService from '../../services/movies/Movies';
+import MoviesService from '../../services/movies/MovieService';
 import './Documentos.scss';
 
 const Listado = (props:any)=>{

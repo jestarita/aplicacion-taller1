@@ -32,7 +32,7 @@ const Articles  = () =>{
     ]
     return (
         <Fragment>
-            <h3 className="text-center mt-2">Listado de articulos</h3>
+            <h3 className="text-center mt-2 principal">Listado de articulos</h3>
             <div className="row">{
                     products.map((item)=>(
                         <Articulo imagen={item.imagen} key={item.id} titulo={item.titulo} 

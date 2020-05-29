@@ -4,4 +4,9 @@ const getMovies = () => {
   return http.get("/movies");
 };
 
-export default {getMovies}
+
+const getGenres = () =>{
+  return http.get("/genres")
+}
+
+export default {getMovies, getGenres}
